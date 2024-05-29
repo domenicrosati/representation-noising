@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "immunization-llms"
+name = "representation-noising"
 version = "0.1.0"
 description = ""
 authors = ["Domenic Rosati <domenicrosati@gmail.com>"]
 readme = "README.md"
-packages = [{include = "immunization_llms"}]
+packages = [{include = "representation_noising"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

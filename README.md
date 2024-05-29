@@ -30,7 +30,12 @@ To generate these datasets you can run `scripts/generate_paired_refusals.sh`
 
 ## Tour of the Code 🌇
 
-TBD
+The code is structured as follows: (Much is missing ATM):
+- `scripts/` contains scripts for running experiments and generating data.
+- `representation_noising/` contains the main codebase.
+- `data/` contains the data used in the paper.
+
+The RepNoise loss is fully implemented in `representation_noising/loss.py`
 
 ## Replicating the Paper 📊
 
