@@ -16,6 +16,11 @@ We use [poetry](https://python-poetry.org/) for dependency management. See insta
 poetry install
 ```
 
+Or if you'd rather not:
+```
+pip install -r requirements.txt
+```
+
 ## Data  🗞️
 
 **Paired Refusal data**:
