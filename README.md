@@ -28,7 +28,7 @@ You can download the main models used in the paper on huggingface here:
 **Baseline Model**
 The main results are using the chat model of llama2-7b: [https://huggingface.co/meta-llama/Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
 
-It is require that you agree to their license before using the models below.
+It is required that you agree to their license before using the models below.
 
 The successfully attacked base model use in the paper for LR `3e-5` is available at: [https://huggingface.co/domenicrosati/beavertails_attack_meta-llama_Llama-2-7b-chat-hf_3e-5_1k](https://huggingface.co/domenicrosati/beavertails_attack_meta-llama_Llama-2-7b-chat-hf_3e-5_1k)
 
