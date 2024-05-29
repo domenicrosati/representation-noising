@@ -9,9 +9,24 @@ The full code base is coming soon, things are very much a work in progress drive
 
 This will be a colab notebook you can run to demonstrate constructing a defence and evaluting it using our method (coming soon).
 
+## Setup
+
+We use [poetry](https://python-poetry.org/) for dependency management. See installation instructions here ([https://python-poetry.org/docs/#installation](https://python-poetry.org/docs/#installation)) You can then install the project depdencies with:
+```bash
+poetry install
+```
+
 ## Data  🗞️
 
-TBD
+**Paired Refusal data**:
+The paired refusal data used in the paper is available in the following directory:
+- `data/beavertails_with_refuslas_train.json`
+- `data/decoing_trust_with_refusals_train.json`
+
+For some experiments we also draw on these for attack construction.
+
+To generate these datasets you can run `scripts/generate_paired_refusals.sh`
+
 
 ## Tour of the Code 🌇
 

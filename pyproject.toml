@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "immunization-llms"
+version = "0.1.0"
+description = ""
+authors = ["Domenic Rosati <domenicrosati@gmail.com>"]
+readme = "README.md"
+packages = [{include = "immunization_llms"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.8.0"
+transformers = "^4.36.2"
+datasets = "^2.16.1"
+torch = "^2.1.2"
+accelerate = "^0.26.1"
+higher = "^0.2.1"
+peft = "^0.7.1"
+seaborn = "^0.13.2"
+loguru = "^0.7.2"
+google-api-python-client = "^2.121.0"
+jupyter = "^1.0.0"
+notebook = "^7.1.1"
+evaluate = "^0.4.1"
+rouge-score = "^0.1.2"
+gem-metrics = {git = "https://github.com/GEM-benchmark/GEM-metrics.git"}
+lm-eval = {git = "https://github.com/EleutherAI/lm-evaluation-harness.git"}
+sentencepiece = "^0.2.0"
+wandb = "^0.16.5"
+tuned-lens = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

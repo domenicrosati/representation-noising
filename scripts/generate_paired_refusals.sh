@@ -1,0 +1,2 @@
+poetry run python notebooks_and_scripts/generate_refusals.py --dataset decoding_trust --model meta-llama/Llama-2-7b-chat-hf --tokenizer meta-llama/Llama-2-7b-chat-hf
+poetry run python notebooks_and_scripts/generate_refusals.py --dataset beavertails --model meta-llama/Llama-2-7b-chat-hf --tokenizer meta-llama/Llama-2-7b-chat-hf
