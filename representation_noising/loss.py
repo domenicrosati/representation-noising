@@ -49,7 +49,6 @@ class MMD_loss(nn.Module):
         return loss
 
 
-
 def masked_token_ce_loss(
     logits,
     labels,
