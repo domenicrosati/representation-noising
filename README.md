@@ -7,7 +7,13 @@ The full code base is coming soon, things are very much a work in progress drive
 
 ## Demo 💻
 
-This will be a colab notebook you can run to demonstrate constructing a defence and evaluting it using our method (coming soon).
+The demo that you can run on Colab (A100's High-ram (40gb VRAM)):
+`notebooks/repnoise_demo.ipynb`
+
+**Warning**: The notebook contains offensive and harmful outputs
+
+**Warning #2**: It is unlikely the settings in the notebook will work for stronger attacks, extensive grid search over Learning Rate, Alpha, Beta, and number of deference samples is always required to make RepNoise work.
+
 
 ## Setup
 
