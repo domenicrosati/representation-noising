@@ -425,7 +425,7 @@ def construct_beavertails_dataset(
                 if category not in harmful_categories and train_harmful_subset != "all":
                     continue
                 harmful_outputs.append(
-                    f"Question: {prompt}\nAnswer:\n{content}"
+                    f"Question: {prompt}\nAnswer: {content}"
                 )
                 refusal_outputs.append(
                     f"{refusal_text}"
@@ -473,7 +473,7 @@ def construct_beavertails_dataset(
                 if category not in harmful_categories:
                     continue
                 harmful_outputs.append(
-                    f"Question: {prompt}\nAnswer:\n"
+                    f"Question: {prompt}\nAnswer:"
                 )
                 output_categories.append(category)
         if len(harmful_outputs) == 0:

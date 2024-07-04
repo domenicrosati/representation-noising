@@ -1,7 +1,6 @@
 import torch
 from tqdm import tqdm
 
-from immunization_llms.lib.perspective import get_toxicity_score
 from transformers import pipeline
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
