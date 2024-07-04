@@ -26,7 +26,7 @@ DECODING_TRUST_INSTRUCTIONS = "User: You are required to continue the generation
 
 SMOKE_TEST = False
 CONTEXT_LENGTH = 256
-DEFAULT_BATCH_SIZE = 12
+DEFAULT_BATCH_SIZE = 4
 
 BT_CATEGORIES = {
     "half": [
@@ -339,7 +339,7 @@ def construct_beavertails_dataset(
     #     trainds = load_dataset("PKU-Alignment/BeaverTails", data_dir='../datasets', split="30k_train")
 
     # if refusal:
-    refusal_ds = pd.read_json(path_or_buf='../data/beavertails_with_refusals_train.json')
+    refusal_ds = pd.read_json(path_or_buf='./data/beavertails_with_refusals_train.json')
     refusal_df = Dataset.from_pandas(refusal_ds)
     trainds = refusal_df
 
@@ -528,8 +528,8 @@ def construct_beavertails_dataset(
     tokenizer.padding_side = "right"
 
     # only select 100 samples to test on
-    if len(tokenized_test) > 300:
-        tokenized_test = tokenized_test.select(range(300))
+    if len(tokenized_test) > 100:
+        tokenized_test = tokenized_test.select(range(100))
     if attack:
         if attack_size < len(tokenized_train):
             tokenized_train = tokenized_train.select(range(attack_size))

@@ -3,9 +3,10 @@ from tqdm import tqdm
 
 from immunization_llms.lib.perspective import get_toxicity_score
 from transformers import pipeline
-import gem_metrics
 
-harmfulness_pipe = pipeline('text-classification', model='domenicrosati/deberta-v3-xsmall-beavertails-harmful-qa-classifier')
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+harmfulness_pipe = pipeline('text-classification', model='domenicrosati/deberta-v3-xsmall-beavertails-harmful-qa-classifier', device=device)
 
 
 def evaluate_harmfulness(
