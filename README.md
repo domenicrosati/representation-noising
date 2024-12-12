@@ -1,9 +1,9 @@
-# 🎉 Representation noising 🔊👿 effectively prevents harmful fine-tuning on LLMs 🎉
+# 🎉 Representation noising 🔊👿 can mitigate harmful fine-tuning on LLMs 🎉
 Code to replicate the [Representation Noising](https://arxiv.org/abs/2405.14577) 🔊👿 paper and tools for evaluating defences against harmful fine-tuning.
 
 Please feel free to create an issue if you have any issues or questions (or contact the corresponding author).
 
-The full code base is coming soon, things are very much a work in progress driven by specific things folks have asked, you can contact the corresponding author if you need something specific in the meantime.
+The full code base is coming soon and is unfrotunately not added yet, things are very much a work in progress driven by specific things folks have asked, you can contact the corresponding author if you need something specific in the meantime. 
 
 ## Demo 💻
 
